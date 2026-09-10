@@ -7,6 +7,25 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* =========================================================
+   BS ENGINEERING - CUSTOM STYLES
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. KLEUREN
+   --------------------------------------------------------- */
+
+:root {
+    --bs-blue: #0088FF;
+	--bs-light-blue: #00bbff;
+    --bs-black: #111111;
+    --bs-white: #FFFFFF;
+	--bs-dark-grey: #242121;
+    --bs-grey: #777777;
+    --bs-light-grey: #d8d8d8;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -83,7 +102,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: var(--bs-dark-grey);/*Achtergrond achter site*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -98,7 +117,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #888;
+		color: var(--bs-light-grey); /*Hoofdtekst in site*/
 		font-family: "Lato", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -121,7 +140,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #777;
+		/*color: #777; */ /*kleur van bolt tekst*/
 		font-weight: 700;
 	}
 
@@ -134,7 +153,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #777;
+		color: var(--bs-white); /* kleur van koppen in hoofdtekst*/
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
@@ -1796,198 +1815,6 @@ input, select, textarea {
 			margin-top: -0.75em;
 		}
 
-/* Form */
-
-	form {
-		margin: 0 0 2.25em 0;
-	}
-
-	label {
-		color: #777;
-		display: block;
-		font-size: 0.9em;
-		font-weight: 700;
-		margin: 0 0 1.125em 0;
-	}
-
-	input::-moz-focus-inner {
-		border: 0;
-		padding: 0;
-	}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-	textarea {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		border-radius: 5px;
-		border: none;
-		border: solid 2px #e4e4e4;
-		color: inherit;
-		display: block;
-		outline: 0;
-		padding: 0 1em;
-		text-decoration: none;
-		width: 100%;
-	}
-
-		input[type="text"]:invalid,
-		input[type="password"]:invalid,
-		input[type="email"]:invalid,
-		select:invalid,
-		textarea:invalid {
-			box-shadow: none;
-		}
-
-		input[type="text"]:focus,
-		input[type="password"]:focus,
-		input[type="email"]:focus,
-		select:focus,
-		textarea:focus {
-			border-color: #4acaa8;
-		}
-
-	select {
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23e4e4e4' /%3E%3C/svg%3E");
-		background-size: 1.25em;
-		background-repeat: no-repeat;
-		background-position: calc(100% - 1em) center;
-		height: 2.75em;
-		padding-right: 2.75em;
-		text-overflow: ellipsis;
-	}
-
-		select option {
-			color: #777;
-			background: #fff;
-		}
-
-		select:focus::-ms-value {
-			background-color: transparent;
-		}
-
-		select::-ms-expand {
-			display: none;
-		}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select {
-		height: 2.75em;
-	}
-
-	textarea {
-		padding: 0.75em 1em;
-	}
-
-	input[type="checkbox"],
-	input[type="radio"] {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		display: block;
-		float: left;
-		margin-right: -2em;
-		opacity: 0;
-		width: 1em;
-		z-index: -1;
-	}
-
-		input[type="checkbox"] + label,
-		input[type="radio"] + label {
-			text-decoration: none;
-			color: #888;
-			cursor: pointer;
-			display: inline-block;
-			font-size: 1em;
-			font-weight: 400;
-			padding-left: 2.4em;
-			padding-right: 0.75em;
-			position: relative;
-		}
-
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				display: inline-block;
-				font-style: normal;
-				font-variant: normal;
-				text-rendering: auto;
-				line-height: 1;
-				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
-				font-weight: 900;
-			}
-
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
-				background: #fafafa;
-				border-radius: 5px;
-				border: solid 2px #e4e4e4;
-				content: '';
-				display: inline-block;
-				font-size: 0.8em;
-				height: 2.0625em;
-				left: 0;
-				line-height: 2.0625em;
-				position: absolute;
-				text-align: center;
-				top: 0;
-				width: 2.0625em;
-			}
-
-		input[type="checkbox"]:checked + label:before,
-		input[type="radio"]:checked + label:before {
-			background: #989898;
-			border-color: #989898;
-			color: #ffffff;
-			content: '\f00c';
-		}
-
-		input[type="checkbox"]:focus + label:before,
-		input[type="radio"]:focus + label:before {
-			border-color: #4acaa8;
-		}
-
-	input[type="checkbox"] + label:before {
-		border-radius: 5px;
-	}
-
-	input[type="radio"] + label:before {
-		border-radius: 100%;
-	}
-
-	::-webkit-input-placeholder {
-		color: #aaa !important;
-		font-style: italic;
-		opacity: 1.0;
-	}
-
-	:-moz-placeholder {
-		color: #aaa !important;
-		font-style: italic;
-		opacity: 1.0;
-	}
-
-	::-moz-placeholder {
-		color: #aaa !important;
-		font-style: italic;
-		opacity: 1.0;
-	}
-
-	:-ms-input-placeholder {
-		color: #aaa !important;
-		font-style: italic;
-		opacity: 1.0;
-	}
-
 /* Box */
 
 	.box {
@@ -2188,12 +2015,12 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 100%;
+			/*border-radius: 100%;*/
 			overflow: hidden;
 		}
 
 			.image.avatar img {
-				border-radius: 100%;
+				/*border-radius: 100%;*/ /*avatar radius*/
 				display: block;
 				width: 100%;
 			}
@@ -2402,9 +2229,9 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #4acaa8;
+				background: var(--bs-blue); /*iconen achtergrond kleur */
 				border-radius: 100%;
-				color: #ffffff;
+				color: var(--bs-white); /*iconen achtergrond kleur */
 				display: block;
 				height: 2.5em;
 				left: 0;
@@ -2437,7 +2264,7 @@ input, select, textarea {
 			}
 
 /* Table */
-
+/*
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
@@ -2503,9 +2330,9 @@ input, select, textarea {
 			table.alt tfoot {
 				border-top: 0;
 			}
-
+*/
 /* Button */
-
+/*
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -2649,11 +2476,12 @@ input, select, textarea {
 			cursor: default;
 			opacity: 0.25;
 		}
+*/
 
 /* Features */
 
 	.features article {
-		border-top: solid 3px #f4f4f4;
+		border-top: solid 3px var(--bs-grey); /*lijnen tussen article*/
 		margin-bottom: 2.25em;
 		padding-top: 2.25em;
 	}
@@ -2685,7 +2513,7 @@ input, select, textarea {
 				margin-bottom: 0;
 			}
 
-/* Header */
+/* Header / side bar */
 
 	#header {
 		display: -moz-flex;
@@ -2700,8 +2528,8 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #4acaa8;
-		color: #d2f2e9;
+		background: var(--bs-white); /*side bar achtergrond pc --> en misschien ook van tel*/
+		color: var(--bs-dark-grey); /*kleur van sidebar tekst*/
 		height: 100%;
 		overflow-y: auto;
 		position: fixed;
@@ -2712,23 +2540,26 @@ input, select, textarea {
 	}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			/*color: #ffffff; */
+			color: #e81414; /*geen idee welke kleur*/
 		}
 
 			#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
-				color: #ffffff;
+				/*color: #ffffff; */
+				color: var(--bs-white); /*side bar header title*/
 			}
 
 		#header header p {
-			color: #b7eadc;
+			/*color: #b7eadc;*/
+			color:rgb(198, 106, 14); /*geen idee welke kleur*/
 		}
 
 		#header a {
-			color: #d2f2e9;
+			color: #d07a19;
 		}
 
 			#header a:hover {
-				color: #ffffff !important;
+				color: var(--bs-light-blue) !important; /*side bar titles hover*/
 			}
 
 		#header > header {
@@ -2742,7 +2573,7 @@ input, select, textarea {
 			#header > header .avatar {
 				display: block;
 				margin: 0 auto 2.25em auto;
-				width: 8em;
+				width: 15em;
 			}
 
 			#header > header h1 {
@@ -2751,7 +2582,7 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #d2f2e9;
+				color: var(--bs-dark-grey);  /*side bar italic subtitle color*/
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2772,7 +2603,7 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc;
+					color: #b7eadc; /*footer icons not shown*/
 				}
 
 		#header > nav {
@@ -2789,7 +2620,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #5ccfb1;
+					border-top: solid 2px var(--bs-light-grey); /*side bar, lijnen tussen koppen*/
 					display: block;
 					padding: 0;
 				}
@@ -2800,15 +2631,15 @@ input, select, textarea {
 						-ms-transition: none;
 						transition: none;
 						border: 0;
-						color: #ffffff !important;
+						color: var(--bs-blue); /*side bar, tekstkleur koppen*/
 						display: block;
 						padding: 0.85em 0;
 						text-decoration: none;
 					}
 
 						#header > nav ul li a.active {
-							background: #fff;
-							color: #4acaa8 !important;
+							background: var(--bs-light-grey); /*side bar, achtergrond huidige kop*/
+							color: var(--bs-blue) !important; /*side bar, tekstkleur huidige koppen*/
 						}
 
 					#header > nav ul li:first-child {
@@ -2818,14 +2649,15 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		background: #fff;
+		/*background: #fff; */
+		background: var(--bs-dark-grey); /*wrapper achergrond */
 		padding-right: 23em;
 	}
 
 /* Main */
 
 	#main > section {
-		border-top: solid 6px #f4f4f4;
+		border-top: solid 6px var(--bs-grey); /*lijnen tussen koppen in wrapepr*/
 	}
 
 		#main > section > .container {
@@ -2839,9 +2671,10 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #fafafa;
+		/* background: #fafafa; */
+		background: var(--bs-dark-grey); /*Footer achergrond */
 		border-top: 0;
-		color: #c0c0c0;
+		color: #c0c0c0; /*Footer tekstkleur */
 		overflow: hidden;
 		padding: 4em 0 2em 0;
 	}
@@ -2853,7 +2686,7 @@ input, select, textarea {
 		}
 
 			#footer .copyright li {
-				border-left: solid 1px #d4d4d4;
+				border-left: solid 1px #d4d4d4; /*Footer tekstkleur streepje */
 				display: inline-block;
 				font-size: 0.8em;
 				margin-left: 1em;
@@ -3030,13 +2863,13 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #222;
-				color: #fff;
+				background: #222;  /* Topbar achtergrond kleur tablet */
+				color: #fff; /* Topbar text kleur tablet */
 				min-width: 320px;
 			}
 
 				#titleBar .title {
-					color: #fff;
+					color: #ffffff;
 					display: block;
 					font-weight: 700;
 					height: 44px;
@@ -3076,8 +2909,8 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #4acaa8;
-						color: #ffffff;
+						background: var(--bs-white);  /* tablet - togle kleur naar side bar*/
+						color: var(--bs-grey); /* tablet - togle kleur naar side bar*/
 						content: '\f0c9';
 						display: block;
 						font-size: 18px;
@@ -3191,7 +3024,7 @@ input, select, textarea {
 
 					#header > header .avatar {
 						margin: 0 auto 1.6875em auto;
-						width: 6em;
+						width: 12em;
 					}
 
 					#header > header h1 {

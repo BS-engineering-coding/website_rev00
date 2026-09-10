@@ -122,14 +122,24 @@
 				});
 
 		// Title Bar.
+		//	$titleBar = $(
+		//		'<div id="titleBar">' +
+		//			'<a href="#header" class="toggle"></a>' +
+		//			'<span class="title">' + $('#logo').html() + '</span>' +
+		//		'</div>'
+		//	)
+		//		.appendTo($body);
 			$titleBar = $(
 				'<div id="titleBar">' +
 					'<a href="#header" class="toggle"></a>' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
+					'<span class="title">' +
+						'<a href="#one">' +
+							'<img src="images/BS-Engineering LOGO - ZWART2.png" alt="BS-Engineering">' +
+						'</a>' +
+					'</span>' +
 				'</div>'
-			)
-				.appendTo($body);
-
+)
+    .appendTo($body);
 		// Panel.
 			$header
 				.panel({

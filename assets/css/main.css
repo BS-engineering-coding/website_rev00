@@ -136,7 +136,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #4acaa8 !important;
+			color: #cac64a !important;
 		}
 
 	strong, b {
@@ -1804,12 +1804,12 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #4acaa8;
+		color: var(--bs-blue); /*main title home */
 		font-size: 3.5em;
 	}
 
 		header.major h2 + p {
-			color: #777;
+			color: var(--bs-white); /*sub title home */
 			font-size: 1.75em;
 			font-weight: 700;
 			margin-top: -0.75em;
@@ -3147,3 +3147,55 @@ input, select, textarea {
 			}
 
 	}
+/* =========================================
+   BS ENGINEERING - MOBILE HEADER
+   ========================================= */
+
+@media screen and (max-width: 1024px) {
+
+    /* Uitschuifbare zijbalk */
+    #header {
+        background: var(--bs-white);
+        color: var(--bs-dark-grey);
+    }
+
+    #header a {
+        color: var(--bs-dark-grey);
+    }
+
+    #header p {
+        color: var(--bs-grey);
+    }
+
+    #header h1,
+    #header h2,
+    #header h3,
+    #header h4,
+    #header h5,
+    #header h6 {
+        color: var(--bs-dark-grey);
+    }
+
+    /* Mobiele bovenste balk */
+    #titleBar {
+        background: var(--bs-white);
+        color: var(--bs-dark-grey);
+    }
+
+    #titleBar .title {
+        color: var(--bs-dark-grey);
+    }
+
+    #titleBar .title img {
+        height: 0.8em;
+        width: auto;
+        vertical-align: middle;
+    }
+
+    /* Hamburgerknop */
+    #titleBar .toggle:before {
+        background: var(--bs-white);
+        color: var(--bs-dark-grey);
+    }
+
+}

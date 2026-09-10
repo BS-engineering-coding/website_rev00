@@ -1876,7 +1876,7 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 5px;
+		/* border-radius: 5px; */
 		border: 0;
 		display: inline-block;
 		position: relative;
@@ -1987,7 +1987,7 @@ input, select, textarea {
 		}
 
 		.image img {
-			border-radius: 5px;
+			/* border-radius: 5px; */
 			display: block;
 		}
 
@@ -2674,7 +2674,7 @@ input, select, textarea {
 		/* background: #fafafa; */
 		background: var(--bs-dark-grey); /*Footer achergrond */
 		border-top: 0;
-		color: #c0c0c0; /*Footer tekstkleur */
+		color: var(--bs-light-grey); /*Footer tekstkleur */
 		overflow: hidden;
 		padding: 4em 0 2em 0;
 	}
@@ -2686,7 +2686,7 @@ input, select, textarea {
 		}
 
 			#footer .copyright li {
-				border-left: solid 1px #d4d4d4; /*Footer tekstkleur streepje */
+				border-left: solid 1px var(--bs-light-grey); /*Footer tekstkleur streepje */
 				display: inline-block;
 				font-size: 0.8em;
 				margin-left: 1em;
@@ -2863,7 +2863,7 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #222;  /* Topbar achtergrond kleur tablet */
+				background: #c51717;  /* Topbar achtergrond kleur tablet */
 				color: #fff; /* Topbar text kleur tablet */
 				min-width: 320px;
 			}

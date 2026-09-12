@@ -12,7 +12,7 @@
    --------------------------------------------------------- */
 
 :root {
-	color-scheme: light;
+	color-scheme: light only;
 
     --bs-blue: #0088FF;
 	--bs-light-blue: #00bbff;
